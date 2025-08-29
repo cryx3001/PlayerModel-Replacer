@@ -41,6 +41,8 @@ net.Receive("PlyModelRep_SendOriginalModel", function(len, ply)
 end)
 
 hook.Add("InitPostEntity", "PlyModelRep_WarnPlayer", function()
+    if not GetConVar("cl_player_model_replacer_enable"):GetBool() then return end
+
     timer.Simple(1, function()
         chat.AddText(Color(0, 255, 0), "[PlayerModel Replacer] ", Color(255, 255, 255), "Player models are replaced with " , Color(200,200,200), defaultModel, Color(255, 255, 255), ". You can change this by setting ", Color(200,200,200), "cl_player_model_replacer_enable", Color(255, 255, 255), " convar to 0 in the console or in the context menu.")
     end)
