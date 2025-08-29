@@ -70,7 +70,7 @@ list.Set("DesktopWindows", "PlayerModelReplacer", {
 
         local checkbox = vgui.Create("DCheckBoxLabel", window)
         checkbox:SetPos(10, 30)
-        checkbox:SetText("Enable PlayerModel Replacer")
+        checkbox:SetText("Enable PlayerModel Replacer\n(replaces all player models with " .. defaultModel .. ")")
         checkbox:SetConVar("cl_player_model_replacer_enable")
         checkbox:SizeToContents()
         checkbox:SetValue(GetConVar("cl_player_model_replacer_enable"):GetBool() and 1 or 0)
