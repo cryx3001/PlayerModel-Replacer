@@ -1,0 +1,22 @@
+{
+	"title"		:	"Playermodel Clientside Replacer",
+	"type"		:	"tool",
+	"tags"		:	[],
+	"description":	"Tool to allow the clientside to replace playermodels.",
+	"ignore"	:
+	[
+		"*.psd",
+		"*.vcproj",
+		"*.txt",
+		"*.tga",
+		"*.xcf",
+		".git*",
+        ".idea*",
+        ".vscode*",
+		"*.md",
+        ".luarc.json",
+		"icon.jpg",
+		"git-hooks-pre-commit",
+		"LICENSE"
+	]
+}
