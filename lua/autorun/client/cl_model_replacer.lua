@@ -3,6 +3,8 @@ CreateConVar("cl_player_model_replacer_enable", "0", {FCVAR_ARCHIVE}, "Enable Pl
 local defaultModel = "models/player/kleiner.mdl"
 
 local function replacePlayerModelPly(ply, model)
+    if ply == LocalPlayer() then return end
+
     if IsValid(ply) then
         ply:SetModel(model)
     end
